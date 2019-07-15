@@ -1,0 +1,11 @@
+{
+  "name": "CursoMecanicaTeoricaJavierGarcia",
+  "author": "Crul (https://github.com/crul)",
+  "description": "Repositorio de fórmulas para el Curso de Mecánica Teórica de Javier García",
+  "version": "0.0.1",
+  "homepage": "https://crul.github.io/CursoMecanicaTeoricaJavierGarcia",
+  "dependencies": {
+    "jquery": "3.4.0",
+    "katex": "0.9.0"
+  }
+}
