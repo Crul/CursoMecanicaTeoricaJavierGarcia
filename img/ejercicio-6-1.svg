@@ -1,0 +1,109 @@
+<svg class="bob" font-family="arial" font-size="14" height="270" width="110" xmlns="http://www.w3.org/2000/svg">
+Generado con https://ivanceras.github.io/svgbob-editor/
+Código fuente inicial (retocado manualmente):
+              ------>
++--+             g                
+|  |             _              _ 
+|  |---/\/\/\---(_)---/\/\/\---(_)
+|  |                              
++--+                              
+<defs>
+<marker id="triangle" markerHeight="8" markerWidth="8" orient="auto" refX="4" refY="2" viewBox="0 0 8 4">
+<polygon class="fg_fill" points="0,0 0,4 8,2 0,0"/>
+</marker>
+<marker id="clear_triangle" markerHeight="10" markerWidth="10" orient="auto" refX="1" refY="7" viewBox="0 0 20 14">
+<polygon class="bg_fill fg_stroke" points="2,2 2,12 18,7 2,2"/>
+</marker>
+<marker id="circle" markerHeight="5" markerWidth="5" orient="auto" refX="10" refY="10" viewBox="0 0 20 20">
+<circle class="fg_fill" cx="10" cy="10" r="8"/>
+</marker>
+<marker id="square" markerHeight="5" markerWidth="5" orient="auto" refX="10" refY="10" viewBox="0 0 20 20">
+<rect class="fg_fill" height="20" width="20" x="0" y="0"/>
+</marker>
+<marker id="open_circle" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="10" viewBox="0 0 20 20">
+<circle class="bg_fill fg_stroke" cx="10" cy="10" r="4"/>
+</marker>
+<marker id="big_open_circle" markerHeight="20" markerWidth="20" orient="auto" refX="20" refY="20" viewBox="0 0 40 40">
+<circle class="bg_fill fg_stroke" cx="20" cy="20" r="6"/>
+</marker>
+</defs>
+<style type="text/css">
+rect.backdrop {
+    fill: white;
+}
+.fg_fill {
+    font-size: 133%;
+    fill: black;
+}
+.bg_fill {
+    fill: white;
+}
+
+.fg_stroke {
+    stroke: black;
+    stroke-width: 2;
+}
+
+.no_fill {
+    fill: none;
+}
+
+.fill_blue {
+    fill: #0ff;
+}
+.fill_red {
+    fill: #f00;
+}
+.fill_gray {
+    fill: #aaa;
+}
+
+.dashed {
+    stroke-dasharray: 5;
+}
+text{
+    fill: black;
+}
+line, path {
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+}
+tspan.head{
+    fill: none;
+    stroke: none;
+}
+</style>
+<g transform="translate(112 0)">
+<g transform="rotate(90 0 0)">
+<rect class="backdrop" height="112" width="272" x="0" y="0"/>
+<rect x="4" y="40" width="24" height="64" class="fill_gray" />
+<line class="fg_stroke" x1="28" x2="60" y1="72" y2="72"/>
+<line class="fg_stroke" x1="56" x2="64" y1="80" y2="64"/>
+<line class="fg_stroke" x1="64" x2="72" y1="64" y2="80"/>
+<line class="fg_stroke" x1="72" x2="80" y1="80" y2="64"/>
+<line class="fg_stroke" x1="80" x2="88" y1="64" y2="80"/>
+<line class="fg_stroke" x1="88" x2="96" y1="80" y2="64"/>
+<line class="fg_stroke" x1="96" x2="104" y1="64" y2="80"/>
+<line class="fg_stroke" x1="100" x2="128" y1="72" y2="72"/>
+<line class="fg_stroke" marker-end="url(#triangle)" x1="172" x2="234" y1="24" y2="24"/>
+<line class="fg_stroke" x1="152" x2="180" y1="72" y2="72"/>
+<line class="fg_stroke" x1="176" x2="184" y1="80" y2="64"/>
+<line class="fg_stroke" x1="184" x2="192" y1="64" y2="80"/>
+<line class="fg_stroke" x1="192" x2="200" y1="80" y2="64"/>
+<line class="fg_stroke" x1="200" x2="208" y1="64" y2="80"/>
+<line class="fg_stroke" x1="208" x2="216" y1="80" y2="64"/>
+<line class="fg_stroke" x1="216" x2="224" y1="64" y2="80"/>
+<line class="fg_stroke" x1="220" x2="248" y1="72" y2="72"/>
+<circle class="fill_red" cx="28" cy="72" r="3"/>
+<circle class="fg_stroke fill_blue" cx="140" cy="72" r="8"/>
+<circle class="fg_stroke fill_blue" cx="260" cy="72" r="8"/>
+</g>
+</g>
+<text class="fg_fill" x="15" y="85">k</text>
+<text class="fg_fill" x="15" y="205">k</text>
+<text class="fg_fill" x="55" y="145">m</text>
+<text class="fg_fill" x="55" y="265">m</text>
+<text class="fg_fill" x="93" y="204">g</text>
+</svg>
