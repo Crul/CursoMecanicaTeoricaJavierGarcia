@@ -84,6 +84,10 @@
           <a href="#capitulo-14">Capítulo 14</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=fli5JTRIbbA&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-15">Capítulo 15</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=QAspiivGD_M&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -762,6 +766,173 @@
       <span class="formula">
         \delta t \simeq \varepsilon 2 t
       </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-15"><a href="#capitulo-15" class="formulas-title">Capítulo 15: Teorema de Noehter - Parte 2</a></h2>
+  <div class="capitulo-15 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.1) Variación de una función
+        <br/>según el vector n<span class="over-previous-char">&#x20D7;</span>
+      </span>
+      <span class="formula">
+        \delta f = \vec{n} \cdot \vec{\nabla} f
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.2) Variación de una función en la dirección de una simetría
+      </span>
+      <span class="formula">
+        \left( \delta f \right)_S =
+          \left( \delta x_1 \right)_S \frac{ \partial f }{ \partial x_1 } +
+          \left( \delta x_2 \right)_S \frac{ \partial f }{ \partial x_2 } +
+          \cdots +
+          \left( \delta x_n \right)_S \frac{ \partial f }{ \partial x_n }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.3) Variación del Lagrangiano
+        <br/>en la dirección de una simetría
+      </span>
+      <span class="formula">
+        \left( \delta f \right)_S =
+          \left( \delta x \right)_S \frac{ \partial L }{ \partial x } +
+          \left( \delta \dot{x} \right)_S \frac{ \partial L }{ \partial \dot{x} } +
+          \left( \delta t \right)_S \frac{ \partial L }{ \partial t }
+      </span>
+      <span class="formula-titulo">
+        En donde:
+      </span>
+      <span class="formula">
+        \delta \dot{x} = \frac{d}{dt} \left( \delta x \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.4) Hay simetría si existe
+        <br/>una función K tal que:
+      </span>
+      <span class="formula">
+        \left( \delta L \right)_S = \varepsilon \frac{dK}{dt}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.5) Variación del Lagrangiano en cualquier dirección,
+        <br/>imponiendo Euler-Lagrange:
+      </span>
+      <span class="formula">
+        \left( \delta L \right)_{E-L} =
+          \delta t \frac{ \partial L }{ \partial t } +
+          \frac{d}{dt} \left( \frac{ \partial L }{ \partial \dot{x} } \left( \delta x \right)_S \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.6) Teorema de Noether 1D
+      </span>
+      <span class="formula">
+        \text{\footnotesize Si } \left( \delta x \right)_S \text{ \footnotesize es una simetría infinitesimal de } L
+      </span>
+      <span class="formula">
+        \Longrightarrow 
+      </span>
+      <span class="formula">
+        \varepsilon \frac{dK}{dt} =
+          \delta t \frac{ \partial L }{ \partial t } +
+          \frac{d}{dt} \left( \frac{ \partial L }{ \partial \dot{x} } \left( \delta x \right)_S \right)
+      </span>
+      <span class="formula-titulo">
+        Caso particular:
+      </span>
+      <span class="formula">
+        L \neq L(t)
+      </span>
+      <span class="formula">
+        \left( \delta x \right)_S = \varepsilon \phi 
+      </span>
+      <span class="formula">
+        \text{\footnotesize Si } \left( \delta x \right)_S = \varepsilon \phi \text{ \footnotesize es una simetría infinitesimal de } L
+      </span>
+      <span class="formula">
+        \Longrightarrow 
+      </span>
+      <span class="formula">
+        Q = \frac{ \partial L }{ \partial \dot{x} } \phi - K = \text{ constante}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.7) Teorema de Noether general
+      </span>
+      <span class="formula">
+        \varepsilon \frac{dK}{dt} =
+          \delta t \frac{ \partial L }{ \partial t } +
+          \frac{d}{dt} \left( \sum_{i=1}^{n} \frac{ \partial L }{ \partial \dot{q}_i } \left( \delta q_i \right)_S \right)
+      </span>
+      <span class="formula-titulo">
+        Caso particular:
+      </span>
+      <span class="formula">
+        L \neq L(t)
+      </span>
+      <span class="formula">
+        Q = \sum_{i=1}^{n} \frac{ \partial L }{ \partial \dot{q}_i } \phi_i - K
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (15.8) Ejercicio propuesto
+      </span>
+      <span class="formula formula-texto">
+        \text{Dada la acción:}
+      </span>
+      <span class="formula">
+        S \left[ x(t) \right] = -mc \int_{t_1}^{t_2} dt \sqrt{ 1 - \frac{ \dot{x}^2 }{ c^2 } }
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          \text{a) } &\text{Demostrar que la siguiente transformación} \\
+                     &\text{deja invariante la acción:}
+        \end{aligned}
+      </span>
+      <span class="formula">
+        ct' = \gamma \left( ct - \beta x \right)
+      </span>
+      <span class="formula">
+        x' = \gamma \left( - \beta ct + x \right)
+      </span>
+      <span class="formula">
+        \gamma = \frac{1}{ \sqrt{ 1 - \beta^2 } }
+      </span>
+      <span class="formula">
+        \beta = \frac{v}{c}
+      </span>
+      <span class="formula formula-texto">
+        \text{b) Encontrar las transformaciones infinitesimales}
+      </span>
+      <span class="formula-titulo" style="clear: both">
+        Soluciones enviadas:
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 15.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 15.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Herick Lopez - Solución Ejercicio Capítulo 15.pdf">
+        Herick Lopez
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Herick Lopez - Solución Ejercicio Capítulo 15.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/David Torrez - Solución Ejercicio Capítulo 15.pdf">
+        David Torrez
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/David Torrez - Solución Ejercicio Capítulo 15.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 15.pdf">
+        Rodolfo Guidobono
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 15.pdf</div>
+      </a>
     </div>
   </div>
 
