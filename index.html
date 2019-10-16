@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20191015" />
+  <link rel="stylesheet" href="style.css?v=20191016" />
 </head>
 
 <body>
@@ -111,6 +111,10 @@
         <li>
           <a href="#capitulo-21">Capítulo 21</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=A50sgKPguro&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-22">Capítulo 22</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=0xoYC8Yr0uI&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -1426,9 +1430,117 @@
     </div>
   </div>
 
+  <h2 id="capitulo-22"><a href="#capitulo-22" class="formulas-title">Capítulo 22: Momento Angular y Corchetes de Poisson</a></h2>
+  <div class="capitulo-22 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.1) Propiedades del Corchete de Poisson
+      </span>
+      <div class="subgrupo-vert-formulas">
+        <span class="formula">
+          1) \ \{ f(q), g(q) \} = 0
+        </span>
+        <span class="formula">
+          2) \ \{ f(p), g(p) \} = 0
+        </span>
+        <span class="formula">
+          3) \ \{ f(q), g(p) \} = \frac{ \partial f }{ \partial q } \frac{ \partial g }{ \partial p }
+        </span>
+        <span class="formula">
+          4) \ \{ f(q), g(p) \} =
+            \sum_{i=1}^n \frac{ \partial f }{ \partial q_i } \frac{ \partial g }{ \partial p_i }
+        </span>
+        <span class="formula">
+          5) \ \{ f(q), h(q, p) \} =
+            \sum_{i=1}^n - \frac{ \partial f }{ \partial p_i } \frac{ \partial g }{ \partial q_i }
+        </span>
+        <span class="formula">
+          6) \ \{ q_i, f(p) \} = \frac{ \partial f }{ \partial p_i }
+        </span>
+        <span class="formula">
+          7) \ \{ p_i, f(q) \} = - \frac{ \partial f }{ \partial q_i }
+        </span>
+        <span class="formula">
+          \text{Si } H = T(p) + V(q)
+        </span>
+        <span class="formula">
+          \ \ \ \ 8) \ \{ q_i, H \} = \frac{ \partial T }{ \partial p_i }
+        </span>
+        <span class="formula">
+          \ \ \ \ 9) \ \{ p_i, H \} = - \frac{ \partial V }{ \partial q_i }
+        </span>
+      </div>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.2) Ecuaciones de Hamilton
+      </span>
+      <span class="formula">
+        \dot{q} = \{ q_i, H \}
+      </span>
+      <span class="formula">
+        \dot{p} = \{ p_i, H \}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.3)
+      </span>
+      <span class="formula">
+        \{ q_i, L_j \} = \varepsilon_{ijk} \ q_k
+      </span>
+      <span class="formula">
+        \{ p_i, L_j \} = \varepsilon_{ijk} \ p_k
+      </span>
+      <span class="formula">
+        \{ L_i, L_j \} = \varepsilon_{ijk} \ L_k
+      </span>
+      <span class="formula-titulo">
+        Tensor de Levi-Civita
+      </span>
+      <span class="formula">
+        \varepsilon_{ijk} = \begin{cases}
+          +1 & \text{si } (i,j,k) \text{ es } (1,2,3), (2,3,1) \text{ o } (3,1,2), \\
+          -1 & \text{si } (i,j,k) \text{ es } (3,2,1), (1,3,2) \text{ o } (2,1,3), \\
+           0 & \text{si } i = j, \text{ o } j = k, \text{ o } k = i
+        \end{cases}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.4) Momento angular
+      </span>
+      <span class="formula">
+        \vec{L} \text{ es un momento angular}
+          \Longleftrightarrow
+          \{ A_i, L_j \} = i \ \varepsilon_{ijk} \ A_k
+      </span>
+      <span class="formula">
+        \vec{L} = ( L_1, L_2, L_3 )
+      </span>
+      <span class="formula formula-texto">
+        \text{y genera las rotaciones de todos}
+      </span>
+      <span class="formula formula-texto">
+        \text{los vectores de la teoría}
+      </span>
+      <span class="formula-titulo">
+        En mecánica cuántica:
+      </span>
+      <span class="formula">
+        \vec{A} \text{ es un operador vectorial}
+          \Longleftrightarrow
+          [ A_i, L_j ] = i \ \varepsilon_{ijk} \ A_k
+      </span>
+      <span class="formula">
+        \vec{A} = ( A_1, A_2, A_3 )
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20191015"></script>
+  <script type="text/javascript" src="script.js?v=20191016"></script>
 
 </body>
 </html>
