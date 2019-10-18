@@ -116,6 +116,10 @@
           <a href="#capitulo-22">Capítulo 22</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=0xoYC8Yr0uI&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-23">Capítulo 23</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=Tglf8OYiciU&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -1521,6 +1525,125 @@
       </span>
       <span class="formula">
         \text{\footnotesize entonces } \vec{A} \text{ \footnotesize es un vector}
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-23"><a href="#capitulo-23" class="formulas-title">Capítulo 23: Reformulación del oscilador armónico</a></h2>
+  <div class="capitulo-23 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.1) Hamiltoniano del
+        <br/>oscilador armónico (1D)
+      </span>
+      <span class="formula">
+        H = \frac{p^2}{2m} + \frac{ m \omega^2 }{2} q^2
+      </span>
+      <span class="formula">
+        \{ q, p \} = 1
+      </span>
+      <span class="formula">
+        \{ q, q \} = \{ p, p \} = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.1) Hamiltoniano del
+        <br/>oscilador armónico (1D)
+        <br/>en forma adimensional
+      </span>
+      <span class="formula">
+        H = \hbar \omega \left[ \widetilde{p}^2 + \widetilde{q}^2 \right]
+      </span>
+      <span class="formula">
+        \widetilde{q} = \sqrt{ \frac{ m \omega}{ 2 \hbar } } q
+      </span>
+      <span class="formula">
+        \widetilde{p} = \frac{p}{ \sqrt{ 2 m \hbar \omega } }
+      </span>
+      <span class="formula">
+        [ \widetilde{p} ] = [ \widetilde{q} ] = 1
+      </span>
+      <span class="formula">
+        \{ \widetilde{q}, \widetilde{p} \} = \frac{1}{ 2 \hbar }
+      </span>
+      <span class="formula formula-texto">
+        \text{La transformación}
+      </span>
+      <span class="formula formula-texto">
+        \text{no es canónica}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.2) Ecuaciones de Hamilton
+      </span>
+      <span class="formula">
+        \dot{ \widetilde{q} } = \frac{1}{ 2 \hbar } \frac{ \partial H }{ \partial \widetilde{p} }
+      </span>
+      <span class="formula">
+        \dot{ \widetilde{p} } = \frac{-1}{ 2 \hbar } \frac{ \partial H }{ \partial \widetilde{q} }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.4) Corchete de Poisson
+      </span>
+      <span class="formula">
+        \{ A, B \}_{ \widetilde{q}, \widetilde{p} } \equiv
+          \frac{1}{ 2 \hbar }
+          \left( \frac{ \partial A }{ \partial \widetilde{Z} } \right)^T J
+          \left( \frac{ \partial B }{ \partial \widetilde{Z} } \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.5) Cambio de variables
+      </span>
+      <span class="formula">
+        a = \widetilde{q} + i \widetilde{p}
+      </span>
+      <span class="formula">
+        a^* = \widetilde{q} - i \widetilde{p}
+      </span>
+      <span class="formula">
+        a \in \Complex
+      </span>
+      <span class="formula">
+        a^* a \in \Reals
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.6) Hamiltoniano
+      </span>
+      <span class="formula">
+        H = \hbar \omega a^* a
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.7) Corchetes de Poisson
+      </span>
+      <span class="formula">
+        \{ a, a \} = 0
+      </span>
+      <span class="formula">
+        \{ a^*, a^* \} = 0
+      </span>
+      <span class="formula">
+        \{ a, a^* \} = \frac{-i}{\hbar}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.8) Ecuaciones de Hamilton
+      </span>
+      <span class="formula">
+        \dot{a} = -i \omega a
+      </span>
+      <span class="formula">
+        \dot{a^*} = i \omega a^*
       </span>
     </div>
   </div>
