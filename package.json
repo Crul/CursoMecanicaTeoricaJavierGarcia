@@ -6,6 +6,6 @@
   "homepage": "https://crul.github.io/CursoMecanicaTeoricaJavierGarcia",
   "dependencies": {
     "jquery": "3.4.0",
-    "katex": "0.9.0"
+    "katex": "0.11.1"
   }
 }
