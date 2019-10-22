@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20191019" />
+  <link rel="stylesheet" href="style.css?v=20191022" />
 </head>
 
 <body>
@@ -127,6 +127,10 @@
         <li>
           <a href="#capitulo-25">Capítulo 25</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=YI_fZpm-IHU&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-26">Capítulo 26</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=F5hMeusKfr0&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -1925,9 +1929,64 @@
     </div>
   </div>
 
+  <h2 id="capitulo-26"><a href="#capitulo-26" class="formulas-title">Capítulo 26: Hamilton-Jacobi VS Schrödinger</a></h2>
+  <div class="capitulo-26 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.1)
+      </span>
+      <span class="formula">
+        S \left[ x(t) \right] = \int_{t_1}^{t_2} \left( \frac{m}{2} \dot{x}^2 - V(x) \right) dt
+      </span>
+      <span class="formula">
+        \text{Si } V(x) = 0 \text{ y la trayectoria } x(t)
+      </span>
+      <span class="formula">
+        \text{ está dada por Newton, entonces:}
+      </span>
+      <span class="formula">
+        \hspace4ex S(t,x) = \frac{m}{2} \frac{(x - x_0)^2}{t - t_0}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.2)
+      </span>
+      <span class="formula">
+        \frac{ \partial S }{ \partial t } = -H
+      </span>
+      <span class="formula">
+        \frac{ \partial S }{ \partial x } = p
+      </span>
+      <span class="formula-titulo">
+        <a target="_blank" href="https://www.dropbox.com/s/v8layka20g8n0dw/aclaracion.pdf">Aclaración (PDF)</a>
+        <div class="only-for-print">https://www.dropbox.com/s/v8layka20g8n0dw/aclaracion.pdf</div>
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.3) Ecuación de Hamilton-Jacobi
+      </span>
+      <span class="formula">
+        H \left( q_1, ..., q_n, \frac{\partial S}{\partial q_1}, ..., \frac{\partial S}{\partial q_n} \right)
+          + \frac{\partial S}{\partial t} = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.4) Ecuación de Schrödinger
+      </span>
+      <span class="formula">
+        i \hbar \frac{ \partial \Psi }{ \partial t } =
+          - \frac{ \hbar^2 }{ 2m } \frac{ \partial^2 \Psi }{ \partial x^2 }
+          + V(x) \Psi
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20191019"></script>
+  <script type="text/javascript" src="script.js?v=20191022"></script>
 
 </body>
 </html>
