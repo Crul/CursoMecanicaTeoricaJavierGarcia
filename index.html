@@ -124,6 +124,10 @@
           <a href="#capitulo-24">Capítulo 24</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=vT8oCA-qRTA&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-25">Capítulo 25</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=YI_fZpm-IHU&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -1696,6 +1700,227 @@
       </span>
       <span class="formula">
         b^* = ( \sinh \theta ) \ a + ( \cosh \theta ) \ a^*
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-25"><a href="#capitulo-25" class="formulas-title">Capítulo 25: Transformación de Bogoliubov - Parte 2</a></h2>
+  <div class="capitulo-25 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.1) Transformación de Bogoliubov
+        <br/>(N osciladores)
+      </span>
+      <span class="formula">
+        b_i = \sum_{j=1}^N \left( u_{ij} a_j + v_{ij} a^*_j \right)
+      </span>
+      <span class="formula">
+        b^*_i = \sum_{j=1}^N \left( v_{ij} a_j + u_{ij} a^*_j \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.2) Matrices U y V
+      </span>
+      <span class="formula">
+        U = ( u_{ij} )
+      </span>
+      <span class="formula">
+        V = ( v_{ij} )
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.3) Imponiendo corchetes de Poisson
+      </span>
+      <span class="formula">
+        \{ b_i, b_j \} = \{ b^*_i, b^*_j \} = 0
+      </span>
+      <span class="formula">
+        \{ b_i, b^*_j \} = \frac{-i}{\hbar} \delta_{ij}
+      </span>
+      <span class="formula-titulo">
+        obtenemos:
+      </span>
+      <span class="formula">
+        UV^T - VU^T = 0
+      </span>
+      <span class="formula">
+        UU^T - VV^T = I
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          U & V \\ V & U
+          \end{pmatrix}^{-1} =
+          \begin{pmatrix}
+            U^T & -V^T \\ -V^T & U^T
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.4) Forma matricial
+      </span>
+      <span class="formula">
+        b = U a + V a^*
+      </span>
+      <span class="formula">
+        b^* = V a + U a^*
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          \boxed{
+            \begin{aligned}
+              \ \\ b \ \\ \ 
+            \end{aligned}
+          } \\ \ \\ 
+          \boxed{
+            \begin{aligned}
+              \ \\ b^* \\ \ 
+            \end{aligned}
+          } 
+        \end{pmatrix} = 
+          \begin{pmatrix} 
+            \boxed{ \ U \ } \ 
+            \boxed{ \ V \ }
+            \\ \ \\
+            \boxed{ \ V \ } \ 
+            \boxed{ \ U \ }
+          \end{pmatrix} 
+
+          \begin{pmatrix}
+            \boxed{
+              \begin{aligned}
+                \ \\ a \ \\ \ 
+              \end{aligned}
+            } \\ \ \\ 
+            \boxed{
+              \begin{aligned}
+                \ \\ a^* \\ \ 
+              \end{aligned}
+            } 
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.5) Forma matricial
+      </span>
+      <span class="formula">
+        a = U^T b - V^T b^*
+      </span>
+      <span class="formula">
+        a^* = -V^T b + U^T b^*
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          \boxed{
+            \begin{aligned}
+              \ \\ a \ \\ \ 
+            \end{aligned}
+          } \\ \ \\ 
+          \boxed{
+            \begin{aligned}
+              \ \\ a^* \\ \ 
+            \end{aligned}
+          } 
+        \end{pmatrix} = 
+          \begin{pmatrix} 
+            \boxed{ \ \ \ U^T \ \ } \ 
+            \boxed{ - V^T \ }
+            \\ \ \\
+            \boxed{ - V^T \ } \ 
+            \boxed{ \ \ \ U^T \ \ }
+          \end{pmatrix} 
+
+          \begin{pmatrix}
+            \boxed{
+              \begin{aligned}
+                \ \\ b \ \\ \ 
+              \end{aligned}
+            } \\ \ \\ 
+            \boxed{
+              \begin{aligned}
+                \ \\ b^* \\ \ 
+              \end{aligned}
+            } 
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.6) "Master equation"
+      </span>
+      <span class="formula">
+        U \frac{ \partial H }{ \partial a } - V \frac{ \partial H }{ \partial a^* } =
+          \lambda \left( V a + U a^* \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.7) Transformación de Bogoliubov (caso 2 osciladores)
+      </span>
+      <span class="formula">
+        H = \alpha_1 a_1 a^*_1 + \alpha_2 a_2 a^*_2
+          + \gamma ( a_1 a_2 + a_1 a^*_2 + a^*_1 a_2 + a^*_1 a^*_2 )
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          \alpha_1 & \gamma & 0 & -\gamma \\
+          \gamma & \alpha_2 & -\gamma & 0 \\
+          0 & \gamma & -\alpha_1 & -\gamma \\
+          \gamma & 0 & -\gamma & -\alpha_2
+        \end{pmatrix}
+        \begin{pmatrix}
+          u_{11} \\ u_{12} \\ v_{11} \\ v_{12}
+        \end{pmatrix} = \lambda
+          \begin{pmatrix}
+            u_{11} \\ u_{12} \\ v_{11} \\ v_{12}
+          \end{pmatrix}
+      </span>
+      <span class="formula-titulo">
+        Valores propios (positivos)
+      </span>
+      <span class="formula">
+        \lambda_1 = \sqrt{
+          \frac{ \alpha_1^2 + \alpha_2^2 }{2} +
+          \sqrt{
+            \left( \frac{ \alpha_1^2 - \alpha_2^2 }{2} \right)^2
+            + 4 \gamma^2 \alpha_1 \alpha_2
+          }
+        }
+      </span>
+      <span class="formula">
+        \lambda_2 = \sqrt{
+          \frac{ \alpha_1^2 + \alpha_2^2 }{2} -
+          \sqrt{
+            \left( \frac{ \alpha_1^2 - \alpha_2^2 }{2} \right)^2
+            + 4 \gamma^2 \alpha_1 \alpha_2
+          }
+        }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.8) Ejercicio propuesto
+      </span>
+      <span class="formula">
+        H = \alpha_1 a_1 a^*_1 + \beta_1 ( a_1 a_1 + a^*_1 a^*_1 ) + \alpha_2 a_2 a^*_2
+          + \beta_2 ( a_2 a_2 + a^*_2 a^*_2 )
+          + \gamma ( a_1 a_2 + a_1 a^*_2 + a^*_1 a_2 + a^*_1 a^*_2 )
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          &\text{a) Usando la "master equation", plantea el problema de autovalores} \\
+          &\text{b) Encontrar las frecuencias propias} \\
+          &\text{c) para el caso }
+            \begin{cases}
+              \alpha_1 = \alpha_2 = 1 \\
+              \beta_1 = \beta_2 = 0 \\
+              \gamma = -\frac{1}{2}
+            \end{cases}
+            \text{, encontrar las matrices } U, V
+        \end{aligned}
       </span>
     </div>
   </div>
