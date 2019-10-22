@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20191022" />
+  <link rel="stylesheet" href="style.css?v=20191022b" />
 </head>
 
 <body>
@@ -131,6 +131,10 @@
         <li>
           <a href="#capitulo-26">Capítulo 26</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=F5hMeusKfr0&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-27">Capítulo 27</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=OJup08jITwA&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -1984,9 +1988,55 @@
     </div>
   </div>
 
+  <h2 id="capitulo-27"><a href="#capitulo-27" class="formulas-title">Capítulo 27: Ejemplo Hamilton-Jacobi</a></h2>
+  <div class="capitulo-27 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (27.1) Hamilton-Jacobi visto como transformación canónica
+      </span>
+      <span class="formula">
+        S = S(q,\alpha,t)
+      </span>
+      <span class="formula">
+        \frac{ \partial S }{ \partial q } = p
+        \hspace6ex
+        \frac{ \partial S }{ \partial t } = - H
+        \hspace6ex
+        \frac{ \partial S }{ \partial \alpha } = \beta
+      </span>
+      <span class="formula-titulo">
+        ver <a href="#capitulo-19">fórmula 19.2</a>
+      </span>
+      <span class="formula">
+        \text{\footnotesize Con } K = 0
+      </span>
+      <span class="formula">
+        \dot{Q} = \frac{ \partial K }{ \partial P } = 0
+        \hspace7ex
+        \dot{P} = - \frac{ \partial K }{ \partial P } = 0
+      </span>
+      <span class="formula">
+        Q = \text{\footnotesize constante}
+        \hspace7ex
+        P = \text{\footnotesize constante}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (27.2) Caso concreto
+      </span>
+      <span class="formula">
+        H = \frac{1}{2m} p^2 + mgx
+      </span>
+      <span class="formula">
+        S(t,x) = -Et - \frac{ 2 \sqrt{2m} }{ 3mg } ( E - mgx )^{\frac{3}{2}}
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20191022"></script>
+  <script type="text/javascript" src="script.js?v=20191022b"></script>
 
 </body>
 </html>
