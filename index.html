@@ -2046,16 +2046,16 @@
         <br/>(discreta)
       </span>
       <span class="formula">
-        L = \frac{m}{2} \sum_i \dot{q}_i^2 - \frac{K}{2} \sum_i \left( q_{i+1} - q_i \right)^2
-      </span>
-      <span class="formula">
-        K \sim \frac{\tau}{a}
-      </span>
-      <span class="formula-titulo">
-        Densidad de masa lineal
+        L = \sum_i \frac{m}{2} \dot{q}_i^2 - \sum_i \frac{k}{2} \left( q_{i+1} - q_i \right)^2
       </span>
       <span class="formula">
         \rho = \frac{m}{a}
+        \hspace9ex
+        k = \frac{\tau}{a}
+      </span>
+      <span class="formula">
+        L = a \left( \sum_i \frac{\rho}{2} \dot{q}_i^2
+          - \sum_i \frac{\tau}{2} \left( \frac{ q_{i+1} - q_i }{a} \right)^2 \right)
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2075,7 +2075,7 @@
         a \to 0
       </span>
       <span class="formula">
-        L = \int_{x_1}^{x_2} dx \ \frac{\rho}{2} \left( \frac{ \partial \phi }{ \partial t } \right)^2
+        L = \int dx \ \frac{\rho}{2} \left( \frac{ \partial \phi }{ \partial t } \right)^2
           - \frac{\tau}{2} \left( \frac{ \partial \phi }{ \partial x } \right)^2
       </span>
     </div>
@@ -2098,20 +2098,14 @@
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (28.3) Prototipo de una Teoría Clásica de Campos
+        (28.5) Prototipo de una Teoría Clásica de Campos
         <br/>(continua) en función de la velocidad de propagación
       </span>
       <span class="formula">
-        L = \int_{x_1}^{x_2} dx \ \frac{\tau}{2} \left[
+        L = \int dx \ \frac{\tau}{2} \left[
           \frac{1}{v^2} \left( \frac{ \partial \phi }{ \partial t } \right)^2
           - \left( \frac{ \partial \phi }{ \partial x } \right)^2
         \right]
-      </span>
-      <span class="formula-titulo">
-        Versión invariante Lorentz
-      </span>
-      <span class="formula">
-        L = \int_{x_1}^{x_2} dx \ \frac{1}{2} \partial_\mu \phi \ \partial^\mu \phi
       </span>
     </div>
   </div>
