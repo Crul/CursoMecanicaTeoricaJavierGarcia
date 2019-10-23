@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20191022b" />
+  <link rel="stylesheet" href="style.css?v=20191023" />
 </head>
 
 <body>
@@ -135,6 +135,10 @@
         <li>
           <a href="#capitulo-27">Capítulo 27</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=OJup08jITwA&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-28">Capítulo 28</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=UyLuGrTWKFM&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -2034,9 +2038,87 @@
     </div>
   </div>
 
+  <h2 id="capitulo-28"><a href="#capitulo-28" class="formulas-title">Capítulo 28: Teoría Clásica de Campos</a></h2>
+  <div class="capitulo-28 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.1) Prototipo de una Teoría Clásica de Campos
+        <br/>(discreto)
+      </span>
+      <span class="formula">
+        L = \frac{m}{2} \sum_i \dot{q}_i^2 - \frac{K}{2} \sum_i \left( q_{i+1} - q_i \right)^2
+      </span>
+      <span class="formula">
+        K \sim \frac{\tau}{a}
+      </span>
+      <span class="formula-titulo">
+        Densidad de masa lineal
+      </span>
+      <span class="formula">
+        \rho = \frac{m}{a}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.2) Integral de Riemann
+      </span>
+      <span class="formula">
+        \int_a^b f(x) dx = \lim_{N \to \infty} \frac{b-a}{N} \sum_i f(x_i)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.3) Prototipo de una Teoría Clásica de Campos
+        <br/>(continuo)
+      </span>
+      <span class="formula">
+        a \to 0
+      </span>
+      <span class="formula">
+        L = \int_{x_1}^{x_2} dx \ \frac{\rho}{2} \left( \frac{ \partial \phi }{ \partial t } \right)^2
+          - \frac{\tau}{2} \left( \frac{ \partial \phi }{ \partial x } \right)^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.4) Velocidad de propagación
+      </span>
+      <span class="formula">
+        \left[ \rho \right] = \frac{M}{L}
+      </span>
+      <span class="formula">
+        \left[ \tau \right] = M \frac{L}{T^2}
+      </span>
+      <span class="formula">
+        \left[ \frac{\tau}{\rho} \right] = \left( \frac{L}{T} \right)^2
+      </span>
+      <span class="formula">
+        \frac{\tau}{\rho} \equiv v^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.3) Prototipo de una Teoría Clásica de Campos
+        <br/>(continuo) en función de la velocidad de propagación
+      </span>
+      <span class="formula">
+        L = \int_{x_1}^{x_2} dx \ \frac{\tau}{2} \left[
+          \frac{1}{v^2} \left( \frac{ \partial \phi }{ \partial t } \right)^2
+          - \left( \frac{ \partial \phi }{ \partial x } \right)^2
+        \right]
+      </span>
+      <span class="formula-titulo">
+        Versión invariante Lorentz
+      </span>
+      <span class="formula">
+        L = \int_{x_1}^{x_2} dx \ \frac{1}{2} \partial_\mu \phi \ \partial^\mu \phi
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20191022b"></script>
+  <script type="text/javascript" src="script.js?v=20191023"></script>
 
 </body>
 </html>
