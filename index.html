@@ -148,6 +148,10 @@
           <a href="#capitulo-30">Capítulo 30</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=gMuDf6Csu2Q&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-31">Capítulo 31</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=0MT9nyl7Z48&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -2387,6 +2391,227 @@
       </span>
       <span class="formula">
         \beta = \tanh \theta = \frac{v}{c}
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-31"><a href="#capitulo-31" class="formulas-title">Capítulo 31: Estructura del Espacio-Tiempo 2/2</a></h2>
+  <div class="capitulo-31 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.1) Nomenclatura
+      </span>
+      <span class="formula">
+        \vec{a} \in \Reals^3
+      </span>
+      <span class="formula">
+        \underline{a} \in M^4
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.2) Transformación de Poincaré:
+      </span>
+      <span class="formula">
+        \begin{pmatrix} e_0' \\ e_1' \\ e_2' \\ e_3' \end{pmatrix} =
+          \left( \Lambda^{-1} \right)^T
+          \begin{pmatrix} e_0 \\ e_1 \\ e_2 \\ e_3 \end{pmatrix}
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          ct' \\ x' \\ y' \\ z' \\ \hdashline 1
+        \end{pmatrix} = 
+          \begin{pmatrix}
+            \boxed{
+              \begin{matrix} \ \\ \ & \hspace2ex \Lambda \hspace2ex & \ \\ \ \\ \ \end{matrix}
+            }
+            &
+            \boxed{
+              \begin{matrix} b^0 \\ b^1 \\ b^2 \\ b^3 \end{matrix}
+            }
+            \\ \ \\
+            \boxed{
+              \begin{matrix} 0 & 0 & 0 & 0 \end{matrix}
+            }
+            & \boxed{
+              \begin{matrix} \ 1 \ \end{matrix}
+            }
+          \end{pmatrix}
+          \begin{pmatrix}
+            ct \\ x \\ y \\ z \\ \hdashline 1
+          \end{pmatrix}
+      </span>
+      <span class="formula">
+        \det \Lambda = 1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.3) Transformación vectores Lorentz
+        <br/>(cualquier observador)
+      </span>
+      <span class="formula">
+        \underline{A}' = \Lambda \underline{A}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.4) Para observadores inerciales
+        <br/>(relatividad especial)
+      </span>
+      <span class="formula">
+        g' = g = \begin{pmatrix}
+          1 &  0 &  0 &  0 \\
+          0 & -1 &  0 &  0 \\
+          0 &  0 & -1 &  0 \\
+          0 &  0 &  0 & -1
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        A' \cdot A' = A \cdot A
+      </span>
+      <span class="formula">
+        \Lambda^T g \Lambda = g
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="no-formula">
+        Vídeo de referencia
+      </span>
+      <a class="no-formula" target="_blank" href="https://www.youtube.com/watch?v=gsalXJaBKrM">
+        El grupo de Poincaré (1/3)
+        <br/>(Curso Grupos de Lie)
+        <div class="only-for-print">https://www.youtube.com/watch?v=gsalXJaBKrM</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.5) Transformaciones de Lorentz
+      </span>
+      <span class="formula">
+        \Lambda = e^{\text{MATRIZ}}
+      </span>
+      <span class="formula">
+        \text{MATRIZ} = a K^1 + b K^2 + c K^3 + d J^1 + e J^2 + f J^3
+      </span>
+      <span class="formula">
+        e^{\text{\footnotesize MATRIZ}} = I
+          + \text{\footnotesize MATRIZ}
+          + \frac{1}{2} \text{\footnotesize MATRIZ}^2
+          + \frac{1}{3!} \text{\footnotesize MATRIZ}^3
+          + \cdots
+      </span>
+      <span class="formula-titulo">
+        Generadores de boosts
+      </span>
+      <span class="formula">
+        K^1 = \begin{pmatrix}
+          0 & 1 & 0 & 0 \\
+          1 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0
+        \end{pmatrix}
+        \hspace2ex
+        K^2 = \begin{pmatrix}
+          0 & 0 & 1 & 0 \\
+          0 & 0 & 0 & 0 \\
+          1 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0
+        \end{pmatrix}
+        \hspace2ex
+        K^3 = \begin{pmatrix}
+          0 & 0 & 0 & 1 \\
+          0 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0 \\
+          1 & 0 & 0 & 0
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        K^1 = \text{\footnotesize en la dirección } x
+        \hspace6ex
+        K^2 = \text{\footnotesize en la dirección } y
+        \hspace6ex
+        K^3 = \text{\footnotesize en la dirección } z
+      </span>
+      <span class="formula-titulo">
+        Generadores de rotaciones
+      </span>
+      <span class="formula">
+        J^1 = \begin{pmatrix}
+          0 & 0 & 0 &  0 \\
+          0 & 0 & 0 &  0 \\
+          0 & 0 & 0 & -1 \\
+          0 & 0 & 1 &  0
+        \end{pmatrix}
+        \hspace2ex
+        J^2 = \begin{pmatrix}
+          0 &  0 & 0 & 0 \\
+          0 &  0 & 0 & 1 \\
+          0 &  0 & 0 & 0 \\
+          0 & -1 & 0 & 0
+        \end{pmatrix}
+        \hspace2ex
+        J^3 = \begin{pmatrix}
+          0 & 0 &  0 & 0 \\
+          0 & 0 & -1 & 0 \\
+          0 & 1 &  0 & 0 \\
+          0 & 0 &  0 & 0
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J^1 = \text{\footnotesize en torno al eje } x
+        \hspace6ex
+        J^2 = \text{\footnotesize en torno al eje } y
+        \hspace6ex
+        J^3 = \text{\footnotesize en torno al eje } z
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.6) Grupo de Lorentz o SO(1,3)
+      </span>
+      <span class="formula">
+        SO(1,3) = \begin{Bmatrix}
+            \Lambda \mid &
+            \begin{aligned}
+              &\det \Lambda = 1 \\
+              &\Lambda^T g \Lambda = g
+            \end{aligned}
+          \end{Bmatrix}
+      </span>
+      <span class="formula">
+        SO(3) \subset SO(1,3)
+      </span>
+      <span class="formula">
+        SO(3) = \begin{Bmatrix}
+            R \mid &
+            \begin{aligned}
+              &\det R = 1 \\
+              &R^T R = I
+            \end{aligned}
+          \end{Bmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.7) Grupo de Poincaré
+      </span>
+      <span class="formula formula-texto">
+        \text{SO(1,3)}
+      </span>
+      <span class="formula formula-texto">
+        \text{Traslaciones espacio-temporales}
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          \boxed{ \begin{matrix} \ \\ \ & \hspace2ex \Lambda \hspace2ex & \ \\ \ \\ \ \end{matrix} }
+          &
+          \boxed{ \begin{matrix} a^0 \\ a^1 \\ a^2 \\ a^3 \end{matrix} }
+          \\ \ \\
+          \boxed{ \begin{matrix} 0 & 0 & 0 & 0 \end{matrix} }
+          &
+          \boxed{ \begin{matrix} \ 1 \ \end{matrix} }
+        \end{pmatrix}
       </span>
     </div>
   </div>
