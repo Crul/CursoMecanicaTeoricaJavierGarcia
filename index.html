@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20191023" />
+  <link rel="stylesheet" href="style.css?v=20191025" />
 </head>
 
 <body>
@@ -143,6 +143,10 @@
         <li>
           <a href="#capitulo-29">Capítulo 29</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=joyt2FgOQlw&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-30">Capítulo 30</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=gMuDf6Csu2Q&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -2190,9 +2194,206 @@
     </div>
   </div>
 
+  <h2 id="capitulo-30"><a href="#capitulo-30" class="formulas-title">Capítulo 30: Estructura del Espacio-Tiempo 1/2</a></h2>
+  <div class="capitulo-30 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.1) Observador (Newton)
+      </span>
+      <span class="formula">
+        \{ \text{punto}, e_1, e_2, e_3 \}
+      </span>
+      <span class="formula-titulo">
+        Base ortonormal
+      </span>
+      <span class="formula">
+        e_i \cdot e_j = \delta_{ij}
+      </span>
+      <span class="formula-titulo">
+        Observador inercial
+      </span>
+      <span class="formula">
+        \text{punto} = (a + bt, c + dt, ...)
+      </span>
+      <span class="formula">
+        e_i \neq e_i(t)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.2) Observador
+        <br/>canónico (3D)
+      </span>
+      <span class="formula">
+        \{ \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}, e_1, e_2, e_3 \}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.3) Transformación entre observadores inerciales (3D):
+      </span>
+      <span class="formula">
+        R^T R = I
+      </span>
+      <span class="formula">
+        t = t'
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          x \\ y \\ z \\ \hdashline 1
+        \end{pmatrix} = 
+          \begin{pmatrix}
+            \boxed{
+              \begin{matrix} \ \\ \ & R_{3x3} & \ \\ \ \end{matrix}
+            }
+            &
+            \boxed{
+              \begin{matrix}
+                a + bt \\
+                c + dt \\
+                f + gt
+              \end{matrix}
+            }
+            \\ \ \\
+            \boxed{
+              \begin{matrix} \ \ 0 & 0 & 0 \ \ \end{matrix}
+            }
+            & \boxed{
+              \begin{matrix} \hspace2ex 1 \hspace2ex \end{matrix}
+            }
+          \end{pmatrix}
+          \begin{pmatrix}
+            x' \\ y' \\ z' \\ \hdashline 1
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.4) Transformación de Galileo completa (3D):
+      </span>
+      <span class="formula">
+        t = t' + m
+      </span>
+      <span class="formula">
+        dt = dt'
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          t \\ x \\ y \\ z \\ \hdashline 1
+        \end{pmatrix} = 
+          \begin{pmatrix}
+            \boxed{ \begin{matrix} 1 \end{matrix} }
+            &
+            \boxed{ \begin{matrix} \ \ 0 & 0 & 0 \ \ \end{matrix} }
+            &
+            \boxed{ \begin{matrix} \hspace2ex m \hspace2ex \end{matrix} }
+            \\ \ \\
+            \boxed{ \begin{matrix} 0 \\ 0 \\ 0 \end{matrix} }
+            &
+            \boxed{ \begin{matrix} \ \\ \ & R_{3x3} & \ \\ \ \end{matrix} }
+            &
+            \boxed{
+              \begin{matrix}
+                a + bt \\
+                c + dt \\
+                f + gt
+              \end{matrix}
+            }
+            \\ \ \\
+            \boxed{ \begin{matrix} 0 \end{matrix} }
+            &
+            \boxed{ \begin{matrix} \ \ 0 & 0 & 0 \ \ \end{matrix} }
+            &
+            \boxed{ \begin{matrix} \hspace2ex 1 \hspace2ex \end{matrix} }
+          \end{pmatrix}
+          \begin{pmatrix}
+            t' \\ x' \\ y' \\ z' \\ \hdashline 1
+          \end{pmatrix}
+      </span>
+      <span class="formula formula-texto">
+        \text{Estas matrices forman un grupo continuo de Lie}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.5) Teorema (Newton)
+      </span>
+      <span class="formula formula-texto">
+        \text{Todas las leyes tienen que ser invariantes}
+      </span>
+      <span class="formula formula-texto">
+        \text{bajo transformaciones de Galileo}
+      </span>
+      <span class="formula-titulo">
+        Ejemplo
+      </span>
+      <span class="formula">
+        \vec{F} = m \vec{a}
+      </span>
+      <span class="formula">
+        | \vec{F}' | = | \vec{F} |
+      </span>
+      <span class="formula">
+        | \vec{a}' | = | \vec{a} |
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.6) Transformación
+        <br/>de vectores libres
+      </span>
+      <span class="formula">
+        A = R A'
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.7) Métrica espaciotiempo
+        <br/>(relatividad 1+1D)
+      </span>
+      <span class="formula">
+        g = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.8) Transformación entre observadores 
+        <br/>inerciales (relatividad especial) o boost
+      </span>
+      <span class="formula">
+        e_0' = \cosh \theta e_0 + \sinh \theta e_1
+      </span>
+      <span class="formula">
+        e_1' = \sinh \theta e_0 + \cosh \theta e_1
+      </span>
+      <span class="formula">
+        \begin{pmatrix} ct \\ x \end{pmatrix} =
+          \begin{pmatrix}
+            \gamma & \gamma \beta \\
+            \gamma \beta & \gamma
+          \end{pmatrix}
+          \begin{pmatrix} ct' \\ x' \end{pmatrix}
+      </span>
+      <span class="formula">
+        \begin{pmatrix} ct' \\ x' \end{pmatrix} =
+          \begin{pmatrix}
+            \gamma & - \gamma \beta \\
+            - \gamma \beta & \gamma
+          \end{pmatrix}
+          \begin{pmatrix} ct \\ x \end{pmatrix}
+      </span>
+      <span class="formula">
+        \gamma = \frac{1}{ \sqrt{ 1 - \beta^2 } }
+      </span>
+      <span class="formula">
+        \beta = \tanh \theta = \frac{v}{c}
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20191023"></script>
+  <script type="text/javascript" src="script.js?v=20191025"></script>
 
 </body>
 </html>
