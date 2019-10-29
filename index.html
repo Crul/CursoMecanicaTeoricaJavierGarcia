@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20191025" />
+  <link rel="stylesheet" href="style.css?v=20191029" />
 </head>
 
 <body>
@@ -151,6 +151,10 @@
         <li>
           <a href="#capitulo-31">Capítulo 31</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=0MT9nyl7Z48&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-32">Capítulo 32</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=kqyjbLoRmAg&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -2616,9 +2620,232 @@
     </div>
   </div>
 
+  <h2 id="capitulo-32"><a href="#capitulo-32" class="formulas-title">Capítulo 32: Notación relativista</a></h2>
+  <div class="capitulo-32 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.1) Métrica e inversa de la métrica
+      </span>
+      <span class="formula">
+        g = \begin{pmatrix}
+          g_{00} & g_{01} & g_{02} & g_{03} \\ 
+          g_{10} & g_{11} & g_{12} & g_{13} \\ 
+          g_{20} & g_{21} & g_{22} & g_{23} \\ 
+          g_{30} & g_{31} & g_{32} & g_{33}
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        g^{-1} = \begin{pmatrix}
+          g^{00} & g^{01} & g^{02} & g^{03} \\ 
+          g^{10} & g^{11} & g^{12} & g^{13} \\ 
+          g^{20} & g^{21} & g^{22} & g^{23} \\ 
+          g^{30} & g^{31} & g^{32} & g^{33}
+        \end{pmatrix}
+      </span>
+      <span class="formula-titulo">
+        En Minkowski
+      </span>
+      <span class="formula">
+        g = \text{diag} (1, -1, -1, -1)
+      </span>
+      <span class="formula">
+        g^{-1} = g
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.2) Vector dual (1-forma)
+      </span>
+      <span class="formula">
+        \bar{u} \equiv u^T g = \begin{pmatrix}u_0 & u_1 & u_2 & u_3\end{pmatrix}
+      </span>
+      <span class="formula">
+        u_\alpha = u^\beta g_{\beta \alpha} = g_{\alpha \beta} u^\beta
+      </span>
+      <span class="formula">
+        u^\alpha = g^{\alpha\beta} u_\beta
+      </span>
+      <span class="formula-titulo">
+        con:
+      </span>
+      <span class="formula">
+        u = \begin{pmatrix}u^0 \\ u^1 \\ u^2 \\ u^3\end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.3) Producto escalar
+      </span>
+      <span class="formula">
+        u \cdot v = \bar{u} v
+      </span>
+      <span class="formula">
+        u \cdot v = u_\alpha v^\alpha
+      </span>
+      <span class="formula">
+        u \cdot v = u^\beta v_\beta
+      </span>
+      <span class="formula">
+        u \cdot v = u^T g v
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.4) Vectores duales de la base
+      </span>
+      <span class="formula">
+        e^\alpha \equiv \text{\footnotesize vector dual de } e_\alpha
+      </span>
+      <span class="formula">
+        e^\alpha = ( e_\alpha )^T g
+      </span>
+      <span class="formula-titulo">
+        Y se cumple
+      </span>
+      <span class="formula">
+        e_\alpha \cdot e^\beta = \delta_\alpha^\beta
+      </span>
+      <span class="formula-titulo">
+        En Minkowski
+      </span>
+      <span class="formula">
+        e^0 = \begin{pmatrix}1 & 0 & 0 & 0\end{pmatrix} = ( e_0 )^T
+      </span>
+      <span class="formula">
+        e^1 = \begin{pmatrix}0 & -1 & 0 & 0\end{pmatrix} = -( e_0 )^T
+      </span>
+      <span class="formula">
+        e^2 = \begin{pmatrix}0 & 0 & -1 & 0\end{pmatrix} = -( e_2 )^T
+      </span>
+      <span class="formula">
+        e^3 = \begin{pmatrix}0 & 0 & 0 & -1\end{pmatrix} = -( e_3 )^T
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.5)
+      </span>
+      <span class="formula">
+        v^{\beta\prime} = {\Lambda^{\beta\prime}}_\alpha v^\alpha
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          v^{0\prime} \\ v^{1\prime} \\ v^{2\prime} \\ v^{3\prime}
+        \end{pmatrix} =
+          \begin{pmatrix}
+            {\Lambda^{0\prime}}_0 & {\Lambda^{0\prime}}_1 & {\Lambda^{0\prime}}_2 & {\Lambda^{0\prime}}_3 \\
+            {\Lambda^{1\prime}}_0 & {\Lambda^{1\prime}}_1 & {\Lambda^{1\prime}}_2 & {\Lambda^{1\prime}}_3 \\
+            {\Lambda^{2\prime}}_0 & {\Lambda^{2\prime}}_1 & {\Lambda^{2\prime}}_2 & {\Lambda^{2\prime}}_3 \\
+            {\Lambda^{3\prime}}_0 & {\Lambda^{3\prime}}_1 & {\Lambda^{3\prime}}_2 & {\Lambda^{3\prime}}_3
+          \end{pmatrix}
+          \begin{pmatrix} v^0 \\ v^1 \\ v^2 \\ v^3 \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.6)
+      </span>
+      <span class="formula">
+        v^\beta = {\Lambda^\beta}_{\alpha\prime} v^{\alpha\prime}
+      </span>
+      <span class="formula">
+        \begin{pmatrix} v^0 \\ v^1 \\ v^2 \\ v^3 \end{pmatrix} = 
+          \begin{pmatrix}
+            {\Lambda^0}_{0\prime} & {\Lambda^0}_{1\prime} & {\Lambda^0}_{2\prime} & {\Lambda^0}_{3\prime} \\
+            {\Lambda^1}_{0\prime} & {\Lambda^1}_{1\prime} & {\Lambda^1}_{2\prime} & {\Lambda^1}_{3\prime} \\
+            {\Lambda^2}_{0\prime} & {\Lambda^2}_{1\prime} & {\Lambda^2}_{2\prime} & {\Lambda^2}_{3\prime} \\
+            {\Lambda^3}_{0\prime} & {\Lambda^3}_{1\prime} & {\Lambda^3}_{2\prime} & {\Lambda^3}_{3\prime}
+          \end{pmatrix}
+          \begin{pmatrix}
+            v^{0\prime} \\ v^{1\prime} \\ v^{2\prime} \\ v^{3\prime}
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.7)
+      </span>
+      <span class="formula">
+        \Lambda^{-1} = \left( {\Lambda^\beta}_{\alpha\prime} \right) = g \Lambda^T g
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.8)
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          &u' = \Lambda u & \text{\footnotesize (contravariante)} \\
+          &\bar{u}' = \bar{u}' \Lambda = \bar{u} \Lambda^{-1}  & \text{\footnotesize (covariante)}
+        \end{aligned}
+      </span>
+      <span class="formula">
+        u_{\alpha\prime} = u_\beta {\Lambda^\beta}_{\alpha\prime}
+      </span>
+      <span class="formula">
+        u_\alpha = u_{\beta\prime} {\Lambda^{\beta\prime}}_\alpha
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.9)
+      </span>
+      <span class="formula">
+        A = A^\mu e_\mu = A^{\mu\prime} e_{\mu\prime}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.10)
+      </span>
+      <span class="formula">
+        \left( {\Lambda^\beta}_{\alpha\prime} \right)^T = {\Lambda_{\alpha\prime}}^\beta
+      </span>
+      <span class="formula">
+        {\Lambda_{\alpha\prime}}^\beta
+          \longleftrightarrow \left( \Lambda^{-1} \right)^T = g \Lambda g
+      </span>
+      <span class="formula">
+        e_{\alpha\prime} = {\Lambda_{\alpha\prime}}^\beta e_\beta
+      </span>
+      <span class="formula">
+        e_\alpha = {\Lambda_\alpha}^{\beta\prime} e_{\beta\prime}
+      </span>
+      <span class="formula">
+        e_\alpha = \Lambda^T e_{\beta\prime}
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          e_{0\prime} \\ e_{1\prime} \\ e_{2\prime} \\ e_{3\prime}
+        \end{pmatrix} =
+          \left( \Lambda^{-1} \right)^T
+          \begin{pmatrix} e_0 \\ e_1 \\ e_2 \\ e_3 \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.11)
+      </span>
+      <span class="formula">
+        {\Lambda^{\mu\prime}}_\alpha {\Lambda_{\mu\prime}}^\sigma = \delta_\alpha^\sigma
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (32.12)
+      </span>
+      <span class="formula">
+        v^\beta = v^{\alpha\prime} {\Lambda_{\alpha\prime}}^\beta
+      </span>
+      <span class="formula">
+        v^{\beta\prime} = v^\alpha {\Lambda_\alpha}^{\beta\prime}
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20191025"></script>
+  <script type="text/javascript" src="script.js?v=20191029"></script>
 
 </body>
 </html>
