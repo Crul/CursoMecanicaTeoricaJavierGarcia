@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20200108" />
+  <link rel="stylesheet" href="style.css?v=20200108a" />
 </head>
 
 <body>
@@ -175,6 +175,10 @@
         <li>
           <a href="#capitulo-36-ejercicio">Ejercicio C36</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=F43U1d7MRKs&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-37">Capítulo 37</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=IRrvBtHLvbc&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -3524,9 +3528,69 @@
     </div>
   </div>
 
+  <h2 id="capitulo-37"><a href="#capitulo-37" class="formulas-title">Capítulo 37: Funciones Generalizadas</a></h2>
+  <div class="capitulo-37 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (37.1) "Definición" de Funcional
+      </span>
+      <span class="formula">
+        F \left[ \phi (x) \right] = \text{ \footnotesize número}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (37.2) Definición de Derivada Funcional
+      </span>
+      <span class="formula">
+        \frac{ \delta F \left[ \phi(x) \right] }{ \delta \phi (x) } = 
+          \lim_{\varepsilon \to 0} \frac{1}{\varepsilon} \left[
+            F \left[ \phi(x) + \varepsilon u(x) \right] 
+            - F \left[ \phi(x) \right]
+          \right]
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (37.3) Propiedades
+      </span>
+      <span class="formula">
+        \begin{aligned}
+        &F \left[ \phi(x) \right] = \int G \left( \phi(x) \right) dx \longrightarrow
+          \frac{ \delta F \left[ \phi(x) \right] }{ \delta \phi(x) }
+          = \left[ \frac{ \partial G }{ \partial \phi } \right]_u \\
+        &F \left[ \phi(x) \right] = \phi(y) \longrightarrow
+          \frac{ \delta F \left[ \phi(x) \right] }{ \delta \phi(x) }
+          = \left[ \delta (x - y) \right]_u \longrightarrow
+          \frac{ \delta \phi(y) }{ \delta \phi(x) } = \left[ \delta (x-y) \right]_u \\
+        &F \left[ \phi(x), \psi(x) \right] = \int G \left( \phi(x), \psi(x) \right) dx \longrightarrow
+          \frac{ \delta F \left[ \phi(x), \psi(x) \right] }{ \delta \phi(x) }
+          = \left[ \frac{ \partial G }{ \partial \phi } \right]_u \\
+        &F \left[ \phi(x) \right] = \int M \left( \phi' (x) \right) dx \longrightarrow
+          \frac{ \delta F \left[ \phi(x) \right] }{ \delta \phi(x) }
+            = \left[ - \frac{ \partial }{ \partial x } \left( \frac{ \partial M }{ \partial \phi' } \right)
+          \right]_u \\
+        &F \left[ \phi(x) \right] = \int K \left( \phi(x), \phi'(x) \right) dx \longrightarrow
+          \frac{ \delta F \left[ \phi(x) \right] }{ \delta \phi(x) }
+          = \left[ \frac{ \partial K }{ \partial \phi }
+            - \frac{ \partial }{ \partial x } \left( \frac{ \partial K }{ \partial \phi' } \right)
+          \right]_u \\
+        &\frac{ \delta F \left[ \phi(y) \right] }{ \delta \phi(x) }
+          = \int dy \frac{ \delta \phi(y) }{ \delta \phi(x) }
+            \frac{ \delta F \left[ \phi(y) \right] }{ \delta \phi(y) }
+          = \frac{ \delta F \left[ \phi(x) \right] }{ \delta \phi(x) } \\
+        &F \left[ \phi(x) \right] = e^{ W \left[ \phi(x) \right] } \longrightarrow
+          \frac{ \delta F \left[ \phi(x) \right] }{ \delta \phi(x) }
+          = e^{ W \left[ \phi(x) \right] }
+            \frac{ \delta W \left[ \phi(x) \right] }{ \delta \phi(x) }
+        \end{aligned}
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20200108"></script>
+  <script type="text/javascript" src="script.js?v=20200108a"></script>
 
 </body>
 </html>
