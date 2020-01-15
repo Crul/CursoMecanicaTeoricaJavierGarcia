@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20200108a" />
+  <link rel="stylesheet" href="style.css?v=20200115" />
 </head>
 
 <body>
@@ -179,6 +179,10 @@
         <li>
           <a href="#capitulo-37">Capítulo 37</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=IRrvBtHLvbc&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-38">Capítulo 38</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=n84sc5l3m9s&list=PLAnA9FVrBl8C-2TTrbArT1g04RJEckRMG">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -3588,9 +3592,79 @@
     </div>
   </div>
 
+  <h2 id="capitulo-38"><a href="#capitulo-38" class="formulas-title">Capítulo 38: Formulación Hamiltoniana del campo Klein-Gordon</a></h2>
+  <div class="capitulo-38 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (38.1) Lagrangiano de Klein-Gordon (1+1)
+      </span>
+      <span class="formula">
+        L \left[ \phi(x) \right] = \int dx \mathcal{L} \left( \phi, \dot{\phi}, \phi' \right)
+      </span>
+      <span class="formula">
+        \mathcal{L} \left( \phi, \dot{\phi}, \phi' \right) =
+          \frac{1}{2} \left( \dot{\phi} \right)^2
+          - \frac{1}{2} \left( \phi' \right)^2
+          - \frac{m^2}{2} \phi^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (38.2) Momento canónico conjugado
+      </span>
+      <span class="formula">
+        \pi \equiv \frac{ \delta L[\phi] }{ \delta \phi } = \dot{\phi}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (38.3) Hamiltoniano
+      </span>
+      <span class="formula">
+        H \left[ \phi, \pi \right] = \left( \int dx \ \pi \dot{\phi} \right) - L
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (38.4) Hamiltoniano de Klein-Gordon (1+1)
+      </span>
+      <span class="formula">
+        H \left[ \phi, \pi \right] = \frac{\pi^2}{2} + \frac{1}{2} \left( \phi' \right)^2 + \frac{m^2}{2} \phi^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (38.5) Ecuaciones de Hamilton
+        <br/>para campos
+      </span>
+      <span class="formula">
+        \dot{\phi} = \frac{ \delta H [ \phi, \pi ] }{ \delta \pi }
+      </span>
+      <span class="formula">
+        \dot{\pi} = - \frac{ \delta H [ \phi, \pi ] }{ \delta \phi }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (38.6) Corchetes de Poisson para Funcionales
+      </span>
+      <span class="formula">
+        \{ A, B \} = \int dx \left(
+            \frac{ \delta A }{ \delta \phi}
+            \frac{ \delta B }{ \delta \pi} -
+            \frac{ \delta A }{ \delta \pi}
+            \frac{ \delta B }{ \delta \phi}
+          \right)
+      </span>
+      <span class="formula">
+        \{ \phi(x), \pi(y) \} = \delta (x - y)
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20200108a"></script>
+  <script type="text/javascript" src="script.js?v=20200115"></script>
 
 </body>
 </html>
