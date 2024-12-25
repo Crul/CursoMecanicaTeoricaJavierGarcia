@@ -9,7 +9,7 @@
   <meta name="author" content="Raúl J. Vila">
   <link rel="icon" type="image/png" href="favicon.png" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <link rel="stylesheet" href="lib/katex.min-0.16.18.css" />
   <link rel="stylesheet" href="style.css?v=20200115" />
 </head>
 
@@ -2052,7 +2052,7 @@
         \text{ está dada por Newton, entonces:}
       </span>
       <span class="formula">
-        \hspace4ex S(t,x) = \frac{m}{2} \frac{(x - x_0)^2}{t - t_0}
+        \hspace{4ex} S(t,x) = \frac{m}{2} \frac{(x - x_0)^2}{t - t_0}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2102,9 +2102,9 @@
       </span>
       <span class="formula">
         \frac{ \partial S }{ \partial q } = p
-        \hspace6ex
+        \hspace{6ex}
         \frac{ \partial S }{ \partial t } = - H
-        \hspace6ex
+        \hspace{6ex}
         \frac{ \partial S }{ \partial \alpha } = \beta
       </span>
       <span class="formula-titulo">
@@ -2115,12 +2115,12 @@
       </span>
       <span class="formula">
         \dot{Q} = \frac{ \partial K }{ \partial P } = 0
-        \hspace7ex
+        \hspace{7ex}
         \dot{P} = - \frac{ \partial K }{ \partial Q } = 0
       </span>
       <span class="formula">
         Q = \text{\footnotesize constante}
-        \hspace7ex
+        \hspace{7ex}
         P = \text{\footnotesize constante}
       </span>
     </div>
@@ -2149,7 +2149,7 @@
       </span>
       <span class="formula">
         \rho = \frac{m}{a}
-        \hspace9ex
+        \hspace{9ex}
         k = \frac{\tau}{a}
       </span>
       <span class="formula">
@@ -2350,7 +2350,7 @@
               \begin{matrix} \ \ 0 & 0 & 0 \ \ \end{matrix}
             }
             & \boxed{
-              \begin{matrix} \hspace2ex 1 \hspace2ex \end{matrix}
+              \begin{matrix} \hspace{2ex} 1 \hspace{2ex} \end{matrix}
             }
           \end{pmatrix}
           \begin{pmatrix}
@@ -2377,7 +2377,7 @@
             &
             \boxed{ \begin{matrix} \ \ 0 & 0 & 0 \ \ \end{matrix} }
             &
-            \boxed{ \begin{matrix} \hspace2ex m \hspace2ex \end{matrix} }
+            \boxed{ \begin{matrix} \hspace{2ex} m \hspace{2ex} \end{matrix} }
             \\ \ \\
             \boxed{ \begin{matrix} 0 \\ 0 \\ 0 \end{matrix} }
             &
@@ -2395,7 +2395,7 @@
             &
             \boxed{ \begin{matrix} \ \ 0 & 0 & 0 \ \ \end{matrix} }
             &
-            \boxed{ \begin{matrix} \hspace2ex 1 \hspace2ex \end{matrix} }
+            \boxed{ \begin{matrix} \hspace{2ex} 1 \hspace{2ex} \end{matrix} }
           \end{pmatrix}
           \begin{pmatrix}
             t' \\ x' \\ y' \\ z' \\ \hdashline 1
@@ -2510,7 +2510,7 @@
         \end{pmatrix} = 
           \begin{pmatrix}
             \boxed{
-              \begin{matrix} \ \\ \ & \hspace2ex \Lambda \hspace2ex & \ \\ \ \\ \ \end{matrix}
+              \begin{matrix} \ \\ \ & \hspace{2ex} \Lambda \hspace{2ex} & \ \\ \ \\ \ \end{matrix}
             }
             &
             \boxed{
@@ -2598,14 +2598,14 @@
           0 & 0 & 0 & 0 \\
           0 & 0 & 0 & 0
         \end{pmatrix}
-        \hspace2ex
+        \hspace{2ex}
         K^2 = \begin{pmatrix}
           0 & 0 & 1 & 0 \\
           0 & 0 & 0 & 0 \\
           1 & 0 & 0 & 0 \\
           0 & 0 & 0 & 0
         \end{pmatrix}
-        \hspace2ex
+        \hspace{2ex}
         K^3 = \begin{pmatrix}
           0 & 0 & 0 & 1 \\
           0 & 0 & 0 & 0 \\
@@ -2615,9 +2615,9 @@
       </span>
       <span class="formula">
         K^1 = \text{\footnotesize en la dirección } x
-        \hspace6ex
+        \hspace{6ex}
         K^2 = \text{\footnotesize en la dirección } y
-        \hspace6ex
+        \hspace{6ex}
         K^3 = \text{\footnotesize en la dirección } z
       </span>
       <span class="formula-titulo">
@@ -2630,14 +2630,14 @@
           0 & 0 & 0 & -1 \\
           0 & 0 & 1 &  0
         \end{pmatrix}
-        \hspace2ex
+        \hspace{2ex}
         J^2 = \begin{pmatrix}
           0 &  0 & 0 & 0 \\
           0 &  0 & 0 & 1 \\
           0 &  0 & 0 & 0 \\
           0 & -1 & 0 & 0
         \end{pmatrix}
-        \hspace2ex
+        \hspace{2ex}
         J^3 = \begin{pmatrix}
           0 & 0 &  0 & 0 \\
           0 & 0 & -1 & 0 \\
@@ -2647,9 +2647,9 @@
       </span>
       <span class="formula">
         J^1 = \text{\footnotesize en torno al eje } x
-        \hspace6ex
+        \hspace{6ex}
         J^2 = \text{\footnotesize en torno al eje } y
-        \hspace6ex
+        \hspace{6ex}
         J^3 = \text{\footnotesize en torno al eje } z
       </span>
     </div>
@@ -2691,7 +2691,7 @@
       </span>
       <span class="formula">
         \begin{pmatrix}
-          \boxed{ \begin{matrix} \ \\ \ & \hspace2ex \Lambda \hspace2ex & \ \\ \ \\ \ \end{matrix} }
+          \boxed{ \begin{matrix} \ \\ \ & \hspace{2ex} \Lambda \hspace{2ex} & \ \\ \ \\ \ \end{matrix} }
           &
           \boxed{ \begin{matrix} a^0 \\ a^1 \\ a^2 \\ a^3 \end{matrix} }
           \\ \ \\
@@ -2959,7 +2959,7 @@
         (33.3) Transformación del campo escalar
       </span>
       <span class="formula">
-        \phi' (x) = \phi \left( \Lambda^{-1} x \right) \hspace4ex \text{Si } a' = 0
+        \phi' (x) = \phi \left( \Lambda^{-1} x \right) \hspace{4ex} \text{Si } a' = 0
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3093,7 +3093,7 @@
         S [\phi] = \int d^4 x \frac{1}{2} \partial_\mu \phi \partial^\mu \phi - \frac{m^2}{2} \phi^2
       </span>
       <span class="formula formula-texto" style="float:left;">
-        \hspace3ex \text{dan:}
+        \hspace{3ex} \text{dan:}
       </span>
       <span class="formula">
         \left[ \partial_\mu \partial^\mu + \left( \frac{mc}{\hbar} \right)^2 \right] \phi = 0
@@ -3514,7 +3514,7 @@
       <span class="formula">
         \left[ f \left( g(x) \right) \right]_u =
           \int f(y) \frac{1}{ | g' \left( h(y) \right) | } u \left( h(y) \right) dy
-          \hspace4ex \left( h = g^{-1} \right)
+          \hspace{4ex} \left( h = g^{-1} \right)
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3524,7 +3524,7 @@
       <span class="formula">
         \left[ \delta \left( f(x) \right) \right]_u =
           \int \delta(y) \frac{1}{ | f' \left( g(y) \right) | } u \left( g(y) \right) dy
-          \hspace4ex \left( g = f^{-1}, y = f(x), x = g(y) \right)
+          \hspace{4ex} \left( g = f^{-1}, y = f(x), x = g(y) \right)
       </span>
       <span class="formula">
         \left[ \delta \left( f(x) \right) \right]_u =
@@ -3566,7 +3566,7 @@
       </span>
       <span class="formula">
         \hat{n} = \frac{ \vec{r}' - \vec{R} }{ | \vec{r}' - \vec{R} | }
-        \hspace9ex
+        \hspace{9ex}
         \vec{\beta} = \frac{1}{c} \frac{ d \vec{R} }{dt}
       </span>
       <span class="formula-titulo" style="clear: both">
@@ -4000,8 +4000,8 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="lib/katex.min-0.16.18.js"></script>
+  <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="script.js?v=20200115"></script>
 
 </body>
